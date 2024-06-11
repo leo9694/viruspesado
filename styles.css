@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7e9f0; /* Rosa claro */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; /* Cinza escuro para o texto */
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff3f6c; /* Rosa forte */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    background-color: #ff3f6c; /* Rosa forte */
+    color: #fff; /* Texto branco */
+    border-radius: 30px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff698e; /* Rosa mais claro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+}
+
+#nao-aceita-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(255, 63, 108, 0.8);
+    border-radius: 30px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#nao-aceita-btn:hover {
+    background-color: rgba(255, 63, 108, 1);
+    transform: scale(1.05);
+}
+/* Estilos existentes */
+
+#confete {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite que os eventos do mouse passem pelos confetes */
+    z-index: 9999; /* Coloca os confetes acima de todo o conteúdo */
+}
+
+.confete {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e85a4f; /* Vermelho */
+    border-radius: 50%;
+    animation: confete-fall 4s linear infinite; /* Animação de queda */
+}
+
+@keyframes confete-fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+
